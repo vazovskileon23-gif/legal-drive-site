@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Юридическая помощь по водительскому удостоверению</title>
-<meta name="description" content="Юридическая помощь и разбор ситуаций по вопросам водительского удостоверения. Сначала фиксируем факты, затем действуем по процедуре. Онлайн.">
+<meta name="description" content="Юридическая помощь и разбор ситуаций по вопросам водительского удостоверения. Фиксируем факты и действуем по процедуре. Онлайн.">
 <meta name="theme-color" content="#ffffff">
 
 <style>
@@ -19,33 +19,24 @@
   --r:12px;
   --max:1100px;
   --shadow:0 14px 36px rgba(0,0,0,.08);
-  --blue:#1e40af33;
   --red:#dc262633;
+  --blue:#1e40af33;
 }
 
-*{box-sizing:border-box}
-body{
-  margin:0;
-  background:var(--bg);
-  color:var(--text);
-  font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-}
-
-.wrap{width:min(var(--max),calc(100% - 32px));margin:0 auto}
+/* Reset */
+*{box-sizing:border-box;}
+body{margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+.wrap{width:min(var(--max),calc(100% - 32px));margin:0 auto;}
 a{text-decoration:none;color:inherit}
 
 /* Header */
-header{
-  border-bottom:1px solid var(--line);
-  background:#fff;
-  padding:12px 0;
-}
+header{border-bottom:1px solid var(--line);background:#fff;padding:12px 0;}
 .header{display:flex;align-items:center;}
 .logo b{display:block;font-size:16px;}
 .logo span{font-size:13px;color:var(--muted);}
 
 /* Hero */
-main{padding:24px 0 24px}
+main{padding:24px 0;}
 .hero{border-radius:var(--r);padding:24px;background:#fff;box-shadow:var(--shadow);}
 .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:start;}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:28px}}
@@ -66,11 +57,11 @@ h2{margin:0 0 12px;font-size:20px;color:var(--text);}
 
 /* Grid cards */
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;}
-.card{border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--bg-soft);}
+.card{border:2px solid var(--red);border-radius:12px;padding:14px;background:var(--bg-soft);}
 .card b{display:block;margin-bottom:6px;font-weight:700;}
 
 /* License mock */
-.license-wrap{position:relative;display:flex;justify-content:center;align-items:flex-start;}
+.license-wrap{position:relative;display:flex;justify-content:center;align-items:flex-start;gap:12px;flex-direction:column;}
 .license{
   width:320px;
   height:200px;
@@ -86,70 +77,23 @@ h2{margin:0 0 12px;font-size:20px;color:var(--text);}
   justify-content:flex-start;
   overflow:hidden;
 }
-.license::before{
-  content:"";
-  position:absolute;
-  top:0; left:0; width:100%; height:100%;
-  background:
-    linear-gradient(135deg, var(--blue) 25%, transparent 25%),
-    linear-gradient(225deg, var(--blue) 25%, transparent 25%),
-    linear-gradient(45deg, var(--red) 25%, transparent 25%),
-    linear-gradient(315deg, var(--red) 25%, transparent 25%);
-  background-size:40px 40px;
-  border-radius:12px;
-  opacity:.15;
-  pointer-events:none;
-}
-.scales{
-  position:absolute;
-  top:-14px;
-  right:-14px;
-  width:44px;
-  height:44px;
-  background:#1f2937;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  color:#fff;
-  font-size:20px;
-  box-shadow:0 8px 20px rgba(0,0,0,.25);
-  z-index:2;
-}
-.motto{
-  position:absolute;
-  right:-54px;
-  top:50%;
-  transform:rotate(-90deg) translateY(-50%);
-  transform-origin:right top;
-  font-size:12px;
-  letter-spacing:.12em;
-  color:#1f2937;
-  font-weight:700;
-  white-space:nowrap;
-  z-index:2;
-}
+.license-header{font-weight:700;font-size:13px;border-bottom:1px solid #e3e7eb;padding-bottom:6px;margin-bottom:10px;text-align:center;}
+.license-body{display:grid;grid-template-columns:70px 1fr;gap:10px;}
+.photo{width:70px;height:90px;background:#e5e9ee;border:1px solid #cfd6dd;border-radius:6px;}
+.lines span{display:block;height:8px;background:#e9edf1;border-radius:4px;margin-bottom:7px;}
+.scales{position:absolute;top:-14px;right:-14px;width:44px;height:44px;background:#1f2937;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:20px;box-shadow:0 8px 20px rgba(0,0,0,.25);z-index:2;}
+.motto{position:absolute;right:-54px;top:50%;transform:rotate(-90deg) translateY(-50%);transform-origin:right top;font-size:12px;letter-spacing:.12em;color:#1f2937;font-weight:700;white-space:nowrap;z-index:2;}
 @media(max-width:900px){.motto{display:none;}}
-.license img{width:100%;border-radius:6px;object-fit:cover;}
+
+/* Colored accent frames */
+.accent-frame{border:2px solid var(--blue);border-radius:12px;padding:12px;background:var(--bg-soft);}
 
 /* FAQ interactive */
 .faq{margin-top:16px;}
-.faq-item{border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden;}
-.faq-item summary{
-  padding:10px 14px;
-  background:var(--bg-soft);
-  font-weight:700;
-  cursor:pointer;
-  list-style:none;
-  user-select:none;
-}
+.faq-item{border:2px solid var(--red);border-radius:12px;margin-bottom:10px;overflow:hidden;}
+.faq-item summary{padding:10px 14px;background:var(--bg-soft);font-weight:700;cursor:pointer;list-style:none;user-select:none;}
 .faq-item summary:hover{background:#e5f0ff;}
-.faq-item p{
-  margin:0;
-  padding:10px 14px;
-  background:#fefefe;
-  border-top:1px solid var(--line);
-  color:#0f172a;
-}
+.faq-item p{margin:0;padding:10px 14px;background:#fefefe;border-top:1px solid var(--line);color:#0f172a;}
 summary::-webkit-details-marker{display:none;}
 </style>
 </head>
@@ -201,7 +145,7 @@ summary::-webkit-details-marker{display:none;}
           <p>Объясним, какие шаги реально помогают уменьшить риски и финансовые потери.</p>
         </details>
         <details class="faq-item">
-          <summary>Могу ли получить консультацию онлайн?</summary>
+          <summary>Можно ли получить консультацию онлайн?</summary>
           <p>Да, всё обсуждаем удалённо, быстро и конфиденциально, без лишних звонков.</p>
         </details>
       </section>
@@ -214,7 +158,18 @@ summary::-webkit-details-marker{display:none;}
       <div class="license">
         <div class="scales">⚖️</div>
         <div class="motto">НАДЁЖНО • ПО ПРОЦЕДУРЕ • ЗАКОННО</div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Driver_license_Russia.png/320px-Driver_license_Russia.png" alt="Водительское удостоверение РФ">
+        <div class="license-header">ВОДИТЕЛЬСКОЕ УДОСТОВЕРЕНИЕ • РФ</div>
+        <div class="license-body">
+          <div class="photo"></div>
+          <div class="lines">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="grid" style="margin-top:12px;gap:6px;">
+          <div class="accent-frame">Быстро</div>
+          <div class="accent-frame">Надёжно</div>
+          <div class="accent-frame">Конфиденциально</div>
+        </div>
       </div>
     </div>
 
@@ -222,7 +177,6 @@ summary::-webkit-details-marker{display:none;}
 </main>
 </body>
 </html>
-
 
 
 
