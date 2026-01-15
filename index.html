@@ -3,36 +3,37 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Вопросы с водительским удостоверением — консультация онлайн</title>
 
-<meta name="description" content="Поможем разобраться с вопросами по водительскому удостоверению. Чётко, по закону, без воды. Консультация в Telegram.">
+<title>Консультации по вопросам водительского удостоверения</title>
 
-<meta name="theme-color" content="#0e1117">
+<meta name="description" content="Информационные консультации по вопросам, связанным с водительским удостоверением. Порядок действий, правовые нюансы, разбор ситуации. Онлайн.">
+
+<meta name="theme-color" content="#ffffff">
 
 <style>
 :root{
-  --bg:#0e1117;
-  --bg2:#161b22;
-  --card:#1c222c;
-  --line:rgba(255,255,255,.08);
+  --bg:#ffffff;
+  --bg-soft:#f6f7f9;
+  --card:#ffffff;
+  --line:#e3e6ea;
 
-  --text:#f0f3f6;
-  --muted:#aab1bb;
+  --text:#0f172a;
+  --muted:#5b6472;
 
+  --accent:#1f2937;
   --tg:#2ea6ff;
-  --tg-hover:#1c90e6;
 
   --r:14px;
-  --max:960px;
-  --shadow:0 18px 40px rgba(0,0,0,.45);
+  --max:1024px;
+  --shadow:0 12px 30px rgba(0,0,0,.06);
 }
 
 *{box-sizing:border-box}
 body{
   margin:0;
-  background:linear-gradient(180deg,var(--bg),var(--bg2));
+  background:var(--bg);
   color:var(--text);
-  font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 }
 
 .wrap{width:min(var(--max),calc(100% - 32px));margin:0 auto}
@@ -40,143 +41,99 @@ a{text-decoration:none;color:inherit}
 
 /* Header */
 header{
+  background:#fff;
   border-bottom:1px solid var(--line);
-  background:rgba(14,17,23,.9);
-  backdrop-filter: blur(10px);
 }
 .header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:14px 0;
+  padding:16px 0;
 }
 .logo b{
   display:block;
-  font-size:15px;
-  letter-spacing:.3px;
+  font-size:16px;
 }
 .logo span{
-  font-size:12px;
-  color:var(--muted);
-}
-.status{
-  font-size:12px;
-  padding:7px 10px;
-  border:1px solid var(--line);
-  border-radius:999px;
-  color:var(--muted);
-}
-
-/* Hero */
-main{padding:26px 0 24px}
-.hero{
-  background:var(--card);
-  border:1px solid var(--line);
-  border-radius:var(--r);
-  padding:22px;
-  box-shadow:var(--shadow);
-}
-
-h1{
-  margin:0 0 10px;
-  font-size:clamp(26px,3.2vw,40px);
-  line-height:1.1;
-}
-
-.lead{
-  margin:0;
-  color:var(--muted);
-  max-width:64ch;
-}
-
-/* Benefits */
-.benefits{
-  margin-top:14px;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:10px;
-}
-.benefit{
-  border:1px solid var(--line);
-  border-radius:12px;
-  padding:12px;
-  background:rgba(255,255,255,.03);
-}
-.benefit b{
-  display:block;
-  font-size:14px;
-  margin-bottom:3px;
-}
-.benefit span{
   font-size:13px;
   color:var(--muted);
 }
 
+/* Hero */
+main{padding:28px 0 40px}
+.hero{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  padding:28px;
+  box-shadow:var(--shadow);
+}
+
+h1{
+  margin:0 0 12px;
+  font-size:clamp(26px,3vw,38px);
+  line-height:1.2;
+}
+
+.lead{
+  margin:0 0 16px;
+  color:var(--muted);
+  max-width:70ch;
+}
+
+/* Sections */
+section{margin-top:28px}
+h2{
+  margin:0 0 10px;
+  font-size:22px;
+}
+p{margin:0 0 10px}
+
+/* Cards */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:14px;
+}
+.card{
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:16px;
+  background:var(--bg-soft);
+}
+.card b{
+  display:block;
+  margin-bottom:4px;
+}
+
 /* CTA */
 .cta{
-  margin-top:16px;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:10px;
+  margin-top:24px;
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
 }
 .btn{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:13px 14px;
+  padding:14px 18px;
   border-radius:14px;
-  font-weight:900;
-  font-size:14px;
-  cursor:pointer;
+  font-weight:700;
   border:1px solid var(--line);
-  background:rgba(255,255,255,.04);
-  transition:.15s ease;
+  background:#fff;
+  cursor:pointer;
 }
-.btn:hover{transform:translateY(-1px)}
 .btn-tg{
-  grid-column:1 / -1;
   background:var(--tg);
   border:none;
   color:#00131f;
 }
-.btn-tg:hover{background:var(--tg-hover)}
 
-.btn small{
-  display:block;
-  font-size:11px;
-  opacity:.85;
-  margin-top:2px;
-}
-
-/* Process */
-.process{
-  margin-top:18px;
-  display:grid;
-  gap:8px;
-}
-.step{
-  display:flex;
-  gap:10px;
-  border:1px solid var(--line);
-  border-radius:12px;
-  padding:12px;
-  background:rgba(255,255,255,.03);
-}
-.step b{font-size:14px}
-.step span{font-size:13px;color:var(--muted)}
-
-/* Legal */
-.legal{
-  margin-top:14px;
-  font-size:12px;
-  color:var(--muted);
+/* Footer */
+footer{
+  margin-top:40px;
+  padding-top:20px;
   border-top:1px solid var(--line);
-  padding-top:12px;
-}
-
-/* Mobile */
-@media(max-width:720px){
-  .cta{grid-template-columns:1fr}
+  font-size:13px;
+  color:var(--muted);
 }
 </style>
 </head>
@@ -186,98 +143,87 @@ h1{
 <header>
   <div class="wrap header">
     <div class="logo">
-      <b>Водительские вопросы • Онлайн</b>
-      <span>Юридический разбор без лишних слов</span>
+      <b>Консультации по водительским вопросам</b>
+      <span>Информационно-правовой формат</span>
     </div>
-    <div class="status">На связи</div>
   </div>
 </header>
 
 <main>
   <div class="wrap hero">
-    <h1>Проблемы с водительским удостоверением — разберём ситуацию и подскажем, что делать</h1>
+    <h1>Консультации по вопросам водительского удостоверения</h1>
     <p class="lead">
-      Без звонков и обещаний. Только факты, документы и порядок действий.
-      Напишите в Telegram — получите чёткий разбор.
+      Разбор ситуации, порядок действий и правовые нюансы,
+      связанные с водительскими документами.
+      Онлайн-консультация в мессенджере.
     </p>
-
-    <div class="benefits">
-      <div class="benefit">
-        <b>По делу</b>
-        <span>Коротко и без воды</span>
-      </div>
-      <div class="benefit">
-        <b>По процедуре</b>
-        <span>Опора на правила и документы</span>
-      </div>
-      <div class="benefit">
-        <b>Онлайн</b>
-        <span>Вся переписка в Telegram</span>
-      </div>
-    </div>
 
     <div class="cta">
       <a class="btn btn-tg"
          href="https://t.me/Vadim_Prava1"
          target="_blank" rel="noopener nofollow">
-        💬 Написать в Telegram
+        Написать в Telegram
       </a>
-
-      <button class="btn" id="copyBtn">
-        Скопировать шаблон
-        <small>для первого сообщения</small>
-      </button>
     </div>
 
-    <div class="process">
-      <div class="step">
-        <b>1. Описываете ситуацию</b>
-        <span>Город, дата, суть вопроса</span>
-      </div>
-      <div class="step">
-        <b>2. Уточняем детали</b>
-        <span>Документы, сроки, нюансы</span>
-      </div>
-      <div class="step">
-        <b>3. Получаете порядок действий</b>
-        <span>Без лишних шагов</span>
-      </div>
-    </div>
+    <section>
+      <h2>О проекте</h2>
+      <p>
+        Данный ресурс носит информационный характер и предназначен
+        для ознакомления с общими правовыми аспектами,
+        связанными с водительскими удостоверениями.
+      </p>
+      <p>
+        Мы помогаем разобраться в процедуре, требованиях и возможных
+        вариантах действий в конкретной ситуации.
+      </p>
+    </section>
 
-    <div class="legal">
-      Консультация носит информационный характер и не является публичной офертой.
-    </div>
+    <section>
+      <h2>С какими вопросами обращаются</h2>
+      <div class="grid">
+        <div class="card">
+          <b>Процедуры и сроки</b>
+          Разъяснение этапов и порядка действий
+        </div>
+        <div class="card">
+          <b>Отказы и спорные ситуации</b>
+          Анализ возможных причин и вариантов
+        </div>
+        <div class="card">
+          <b>Замена и восстановление</b>
+          Общая информация по процедуре
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Правовая основа</h2>
+      <p>
+        Консультации основываются на действующих нормативных актах,
+        общедоступной правовой информации и официальных разъяснениях.
+      </p>
+    </section>
+
+    <section>
+      <h2>Что мы не делаем</h2>
+      <div class="grid">
+        <div class="card">Не оформляем документы</div>
+        <div class="card">Не гарантируем результат</div>
+        <div class="card">Не представляем интересы без договора</div>
+      </div>
+    </section>
+
+    <footer>
+      Информация на сайте не является публичной офертой,
+      юридической услугой или обещанием результата.
+      Окончательные решения принимаются пользователем самостоятельно.
+    </footer>
+
   </div>
 </main>
 
-<script>
-(function(){
-const text =
-`Здравствуйте.
-Нужна консультация по водительскому удостоверению.
-
-Регион/город:
-Дата события:
-Кратко — что произошло:
-Документы (если есть):
-
-Спасибо.`;
-
-document.getElementById('copyBtn').onclick = async () => {
-  try{
-    await navigator.clipboard.writeText(text);
-    alert('Шаблон скопирован');
-  }catch(e){
-    const t=document.createElement('textarea');
-    t.value=text;document.body.appendChild(t);
-    t.select();document.execCommand('copy');
-    document.body.removeChild(t);
-    alert('Шаблон скопирован');
-  }
-};
-})();
-</script>
-
 </body>
 </html>
+
 
