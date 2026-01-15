@@ -4,28 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Консультации по вопросам водительского удостоверения</title>
+<title>Юридическая помощь по вопросам водительского удостоверения</title>
 
-<meta name="description" content="Информационные консультации по вопросам, связанным с водительским удостоверением. Порядок действий, правовые нюансы, разбор ситуации. Онлайн.">
+<meta name="description" content="Юридическая помощь и разбор ситуаций, связанных с водительским удостоверением. Порядок действий, процедуры, правовые нюансы. Онлайн-консультации.">
 
 <meta name="theme-color" content="#ffffff">
 
 <style>
 :root{
   --bg:#ffffff;
-  --bg-soft:#f6f7f9;
-  --card:#ffffff;
-  --line:#e3e6ea;
+  --bg-soft:#f4f6f8;
+  --line:#e2e6ea;
 
   --text:#0f172a;
   --muted:#5b6472;
 
-  --accent:#1f2937;
+  --dark:#1f2937;
   --tg:#2ea6ff;
 
   --r:14px;
-  --max:1024px;
-  --shadow:0 12px 30px rgba(0,0,0,.06);
+  --max:1040px;
+  --shadow:0 10px 26px rgba(0,0,0,.06);
 }
 
 *{box-sizing:border-box}
@@ -41,12 +40,11 @@ a{text-decoration:none;color:inherit}
 
 /* Header */
 header{
-  background:#fff;
   border-bottom:1px solid var(--line);
+  background:#fff;
 }
 .header{
   display:flex;
-  justify-content:space-between;
   align-items:center;
   padding:16px 0;
 }
@@ -60,36 +58,55 @@ header{
 }
 
 /* Hero */
-main{padding:28px 0 40px}
+main{padding:32px 0 44px}
 .hero{
-  background:var(--card);
   border:1px solid var(--line);
   border-radius:var(--r);
-  padding:28px;
+  padding:32px;
+  background:#fff;
   box-shadow:var(--shadow);
 }
 
 h1{
   margin:0 0 12px;
-  font-size:clamp(26px,3vw,38px);
+  font-size:clamp(28px,3vw,40px);
   line-height:1.2;
 }
-
 .lead{
-  margin:0 0 16px;
+  margin:0 0 18px;
   color:var(--muted);
-  max-width:70ch;
+  max-width:68ch;
+}
+
+/* CTA */
+.cta{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom:26px;
+}
+.btn{
+  padding:14px 20px;
+  border-radius:14px;
+  font-weight:700;
+  border:1px solid var(--line);
+  background:#fff;
+  cursor:pointer;
+}
+.btn-tg{
+  background:var(--tg);
+  border:none;
+  color:#00131f;
 }
 
 /* Sections */
-section{margin-top:28px}
+section{margin-top:30px}
 h2{
-  margin:0 0 10px;
+  margin:0 0 12px;
   font-size:22px;
 }
-p{margin:0 0 10px}
 
-/* Cards */
+/* Grid */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -103,34 +120,13 @@ p{margin:0 0 10px}
 }
 .card b{
   display:block;
-  margin-bottom:4px;
-}
-
-/* CTA */
-.cta{
-  margin-top:24px;
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-}
-.btn{
-  padding:14px 18px;
-  border-radius:14px;
-  font-weight:700;
-  border:1px solid var(--line);
-  background:#fff;
-  cursor:pointer;
-}
-.btn-tg{
-  background:var(--tg);
-  border:none;
-  color:#00131f;
+  margin-bottom:6px;
 }
 
 /* Footer */
 footer{
-  margin-top:40px;
-  padding-top:20px;
+  margin-top:36px;
+  padding-top:18px;
   border-top:1px solid var(--line);
   font-size:13px;
   color:var(--muted);
@@ -143,19 +139,23 @@ footer{
 <header>
   <div class="wrap header">
     <div class="logo">
-      <b>Консультации по водительским вопросам</b>
-      <span>Информационно-правовой формат</span>
+      <b>Юридическая помощь</b>
+      <span>Вопросы водительского удостоверения</span>
     </div>
   </div>
 </header>
 
 <main>
   <div class="wrap hero">
-    <h1>Консультации по вопросам водительского удостоверения</h1>
+
+    <h1>
+      Если возник вопрос по водительскому удостоверению —
+      сначала фиксируем факты, затем действуем по процедуре
+    </h1>
+
     <p class="lead">
-      Разбор ситуации, порядок действий и правовые нюансы,
-      связанные с водительскими документами.
-      Онлайн-консультация в мессенджере.
+      Юридическая помощь и разбор ситуаций, связанных с водительским удостоверением.
+      Объясняем порядок действий, процедуры и правовые нюансы — без лишней теории.
     </p>
 
     <div class="cta">
@@ -167,57 +167,53 @@ footer{
     </div>
 
     <section>
-      <h2>О проекте</h2>
-      <p>
-        Данный ресурс носит информационный характер и предназначен
-        для ознакомления с общими правовыми аспектами,
-        связанными с водительскими удостоверениями.
-      </p>
-      <p>
-        Мы помогаем разобраться в процедуре, требованиях и возможных
-        вариантах действий в конкретной ситуации.
-      </p>
-    </section>
-
-    <section>
-      <h2>С какими вопросами обращаются</h2>
+      <h2>Как мы подходим к каждой ситуации</h2>
       <div class="grid">
         <div class="card">
-          <b>Процедуры и сроки</b>
-          Разъяснение этапов и порядка действий
+          <b>1. Фиксируем факты</b>
+          Дата, место, документы, действия сторон. Без эмоций — только то, что имеет значение.
         </div>
         <div class="card">
-          <b>Отказы и спорные ситуации</b>
-          Анализ возможных причин и вариантов
+          <b>2. Проверяем процедуру</b>
+          Смотрим, какие этапы предусмотрены законом и где чаще всего допускают ошибки.
         </div>
         <div class="card">
-          <b>Замена и восстановление</b>
-          Общая информация по процедуре
+          <b>3. Определяем варианты</b>
+          Объясняем возможные пути и последствия каждого из них.
         </div>
       </div>
     </section>
 
     <section>
-      <h2>Правовая основа</h2>
-      <p>
-        Консультации основываются на действующих нормативных актах,
-        общедоступной правовой информации и официальных разъяснениях.
-      </p>
+      <h2>С какими вопросами обычно обращаются</h2>
+      <div class="grid">
+        <div class="card">
+          <b>Спорные ситуации</b>
+          Когда непонятно, что делать дальше и с чего начать.
+        </div>
+        <div class="card">
+          <b>Процедуры и сроки</b>
+          Что, когда и в каком порядке подаётся.
+        </div>
+        <div class="card">
+          <b>Документы и формулировки</b>
+          На что обратить внимание и что действительно важно.
+        </div>
+      </div>
     </section>
 
     <section>
-      <h2>Что мы не делаем</h2>
+      <h2>Что важно понимать заранее</h2>
       <div class="grid">
-        <div class="card">Не оформляем документы</div>
-        <div class="card">Не гарантируем результат</div>
-        <div class="card">Не представляем интересы без договора</div>
+        <div class="card">Мы не оформляем документы за клиента</div>
+        <div class="card">Не даём гарантий результата</div>
+        <div class="card">Работаем в рамках закона и процедуры</div>
       </div>
     </section>
 
     <footer>
-      Информация на сайте не является публичной офертой,
-      юридической услугой или обещанием результата.
-      Окончательные решения принимаются пользователем самостоятельно.
+      Информация на сайте носит справочный характер и не является публичной офертой
+      или обещанием конкретного результата. Окончательные решения принимаются пользователем самостоятельно.
     </footer>
 
   </div>
@@ -225,5 +221,6 @@ footer{
 
 </body>
 </html>
+
 
 
