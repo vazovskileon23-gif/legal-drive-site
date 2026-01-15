@@ -1,226 +1,91 @@
-<!doctype html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Юридическая помощь по вопросам водительского удостоверения</title>
-
-<meta name="description" content="Юридическая помощь и разбор ситуаций, связанных с водительским удостоверением. Порядок действий, процедуры, правовые нюансы. Онлайн-консультации.">
-
-<meta name="theme-color" content="#ffffff">
-
-<style>
-:root{
-  --bg:#ffffff;
-  --bg-soft:#f4f6f8;
-  --line:#e2e6ea;
-
-  --text:#0f172a;
-  --muted:#5b6472;
-
-  --dark:#1f2937;
-  --tg:#2ea6ff;
-
-  --r:14px;
-  --max:1040px;
-  --shadow:0 10px 26px rgba(0,0,0,.06);
-}
-
-*{box-sizing:border-box}
-body{
-  margin:0;
-  background:var(--bg);
-  color:var(--text);
-  font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-}
-
-.wrap{width:min(var(--max),calc(100% - 32px));margin:0 auto}
-a{text-decoration:none;color:inherit}
-
-/* Header */
-header{
-  border-bottom:1px solid var(--line);
-  background:#fff;
-}
-.header{
-  display:flex;
-  align-items:center;
-  padding:16px 0;
-}
-.logo b{
-  display:block;
-  font-size:16px;
-}
-.logo span{
-  font-size:13px;
-  color:var(--muted);
-}
-
-/* Hero */
-main{padding:32px 0 44px}
-.hero{
-  border:1px solid var(--line);
-  border-radius:var(--r);
-  padding:32px;
-  background:#fff;
-  box-shadow:var(--shadow);
-}
-
-h1{
-  margin:0 0 12px;
-  font-size:clamp(28px,3vw,40px);
-  line-height:1.2;
-}
-.lead{
-  margin:0 0 18px;
-  color:var(--muted);
-  max-width:68ch;
-}
-
-/* CTA */
-.cta{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-bottom:26px;
-}
-.btn{
-  padding:14px 20px;
-  border-radius:14px;
-  font-weight:700;
-  border:1px solid var(--line);
-  background:#fff;
-  cursor:pointer;
-}
-.btn-tg{
-  background:var(--tg);
-  border:none;
-  color:#00131f;
-}
-
-/* Sections */
-section{margin-top:30px}
-h2{
-  margin:0 0 12px;
-  font-size:22px;
-}
-
-/* Grid */
-.grid{
+.hero-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:14px;
+  grid-template-columns: 1.1fr .9fr;
+  gap:24px;
+  align-items:center;
 }
-.card{
-  border:1px solid var(--line);
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+}
+
+/* License mock */
+.license-wrap{
+  position:relative;
+  display:flex;
+  justify-content:center;
+}
+
+.license{
+  width:320px;
+  height:200px;
+  background:#fdfdfd;
+  border:1px solid #cfd6dd;
   border-radius:12px;
-  padding:16px;
-  background:var(--bg-soft);
+  box-shadow:0 20px 40px rgba(0,0,0,.12);
+  padding:14px;
+  font-size:12px;
+  position:relative;
 }
-.card b{
+
+.license-header{
+  font-weight:700;
+  font-size:13px;
+  border-bottom:1px solid #e3e7eb;
+  padding-bottom:6px;
+  margin-bottom:8px;
+}
+
+.license-body{
+  display:grid;
+  grid-template-columns:64px 1fr;
+  gap:10px;
+}
+
+.photo{
+  width:64px;
+  height:80px;
+  background:#e5e9ee;
+  border:1px solid #cfd6dd;
+  border-radius:6px;
+}
+
+.lines span{
   display:block;
+  height:8px;
+  background:#e9edf1;
+  border-radius:4px;
   margin-bottom:6px;
 }
 
-/* Footer */
-footer{
-  margin-top:36px;
-  padding-top:18px;
-  border-top:1px solid var(--line);
-  font-size:13px;
-  color:var(--muted);
+/* Scales */
+.scales{
+  position:absolute;
+  top:-18px;
+  right:-18px;
+  width:48px;
+  height:48px;
+  background:#1f2937;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  color:#fff;
+  font-size:22px;
+  box-shadow:0 10px 24px rgba(0,0,0,.25);
 }
-</style>
-</head>
 
-<body>
-
-<header>
-  <div class="wrap header">
-    <div class="logo">
-      <b>Юридическая помощь</b>
-      <span>Вопросы водительского удостоверения</span>
-    </div>
-  </div>
-</header>
-
-<main>
-  <div class="wrap hero">
-
-    <h1>
-      Если возник вопрос по водительскому удостоверению —
-      сначала фиксируем факты, затем действуем по процедуре
-    </h1>
-
-    <p class="lead">
-      Юридическая помощь и разбор ситуаций, связанных с водительским удостоверением.
-      Объясняем порядок действий, процедуры и правовые нюансы — без лишней теории.
-    </p>
-
-    <div class="cta">
-      <a class="btn btn-tg"
-         href="https://t.me/Vadim_Prava1"
-         target="_blank" rel="noopener nofollow">
-        Написать в Telegram
-      </a>
-    </div>
-
-    <section>
-      <h2>Как мы подходим к каждой ситуации</h2>
-      <div class="grid">
-        <div class="card">
-          <b>1. Фиксируем факты</b>
-          Дата, место, документы, действия сторон. Без эмоций — только то, что имеет значение.
-        </div>
-        <div class="card">
-          <b>2. Проверяем процедуру</b>
-          Смотрим, какие этапы предусмотрены законом и где чаще всего допускают ошибки.
-        </div>
-        <div class="card">
-          <b>3. Определяем варианты</b>
-          Объясняем возможные пути и последствия каждого из них.
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>С какими вопросами обычно обращаются</h2>
-      <div class="grid">
-        <div class="card">
-          <b>Спорные ситуации</b>
-          Когда непонятно, что делать дальше и с чего начать.
-        </div>
-        <div class="card">
-          <b>Процедуры и сроки</b>
-          Что, когда и в каком порядке подаётся.
-        </div>
-        <div class="card">
-          <b>Документы и формулировки</b>
-          На что обратить внимание и что действительно важно.
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Что важно понимать заранее</h2>
-      <div class="grid">
-        <div class="card">Мы не оформляем документы за клиента</div>
-        <div class="card">Не даём гарантий результата</div>
-        <div class="card">Работаем в рамках закона и процедуры</div>
-      </div>
-    </section>
-
-    <footer>
-      Информация на сайте носит справочный характер и не является публичной офертой
-      или обещанием конкретного результата. Окончательные решения принимаются пользователем самостоятельно.
-    </footer>
-
-  </div>
-</main>
-
-</body>
-</html>
+/* Motto */
+.motto{
+  position:absolute;
+  right:-54px;
+  top:50%;
+  transform:rotate(-90deg) translateY(-50%);
+  transform-origin:right top;
+  font-size:13px;
+  letter-spacing:.12em;
+  color:#1f2937;
+  font-weight:700;
+  white-space:nowrap;
+}
 
 
 
