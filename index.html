@@ -5,24 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Юридическая помощь по водительскому удостоверению</title>
-
 <meta name="description" content="Юридическая помощь и разбор ситуаций по вопросам водительского удостоверения. Сначала фиксируем факты, затем действуем по процедуре. Онлайн.">
-
 <meta name="theme-color" content="#ffffff">
 
 <style>
 :root{
-  --bg:#ffffff;
+  --bg:#fdfdfd;
   --bg-soft:#f4f6f8;
   --line:#e2e6ea;
-
   --text:#0f172a;
   --muted:#5b6472;
-
-  --dark:#1f2937;
-  --tg:#2ea6ff;
-
-  --r:14px;
+  --accent:#2ea6ff;
+  --r:12px;
   --max:1100px;
   --shadow:0 14px 36px rgba(0,0,0,.08);
 }
@@ -35,6 +29,7 @@ body{
   font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 }
 
+/* Wrapper */
 .wrap{width:min(var(--max),calc(100% - 32px));margin:0 auto}
 a{text-decoration:none;color:inherit}
 
@@ -42,187 +37,102 @@ a{text-decoration:none;color:inherit}
 header{
   border-bottom:1px solid var(--line);
   background:#fff;
+  padding:12px 0;
 }
-.header{
-  display:flex;
-  align-items:center;
-  padding:16px 0;
-}
-.logo b{
-  display:block;
-  font-size:16px;
-}
-.logo span{
-  font-size:13px;
-  color:var(--muted);
-}
+.header{display:flex;align-items:center;}
+.logo b{display:block;font-size:16px;}
+.logo span{font-size:13px;color:var(--muted);}
 
 /* Hero */
-main{padding:36px 0 48px}
-.hero{
-  border:1px solid var(--line);
-  border-radius:var(--r);
-  padding:36px;
-  background:#fff;
-  box-shadow:var(--shadow);
-}
-
-.hero-grid{
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:28px;
-  align-items:center;
-}
-@media(max-width:900px){
-  .hero-grid{grid-template-columns:1fr}
-}
+main{padding:24px 0 36px}
+.hero{border-radius:var(--r);padding:24px;background:#fff;box-shadow:var(--shadow);}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:start;}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:28px}}
 
 /* Text */
-h1{
-  margin:0 0 12px;
-  font-size:clamp(28px,3vw,40px);
-  line-height:1.2;
-}
-.lead{
-  margin:0 0 20px;
-  color:var(--muted);
-  max-width:65ch;
-}
+h1{margin:0 0 12px;font-size:clamp(26px,3vw,36px);line-height:1.2;}
+.lead{margin:0 0 20px;color:var(--muted);max-width:60ch;}
 
 /* CTA */
-.cta{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-}
-.btn{
-  padding:14px 22px;
-  border-radius:14px;
-  font-weight:700;
-  border:1px solid var(--line);
-  background:#fff;
-  cursor:pointer;
-}
-.btn-tg{
-  background:var(--tg);
-  border:none;
-  color:#00131f;
-}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px;}
+.btn{padding:12px 20px;border-radius:12px;font-weight:700;border:1px solid var(--line);cursor:pointer;text-align:center;}
+.btn-tg{background:var(--accent);border:none;color:#00131f;transition:.2s;}
+.btn-tg:hover{opacity:.9;}
 
 /* Sections */
-section{margin-top:34px}
-h2{
-  margin:0 0 14px;
-  font-size:22px;
-}
+section{margin-top:28px;}
+h2{margin:0 0 12px;font-size:20px;color:var(--text);}
 
 /* Grid cards */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:14px;
-}
-.card{
-  border:1px solid var(--line);
-  border-radius:12px;
-  padding:16px;
-  background:var(--bg-soft);
-}
-.card b{
-  display:block;
-  margin-bottom:6px;
-}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;}
+.card{border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--bg-soft);}
+.card b{display:block;margin-bottom:6px;font-weight:700;}
 
 /* License mock */
-.license-wrap{
-  position:relative;
-  display:flex;
-  justify-content:center;
-}
-
+.license-wrap{position:relative;display:flex;justify-content:center;align-items:start;}
 .license{
-  width:340px;
-  height:210px;
+  width:320px;
+  height:200px;
   background:#fdfdfd;
   border:1px solid #cfd6dd;
-  border-radius:14px;
-  box-shadow:0 20px 40px rgba(0,0,0,.14);
-  padding:14px;
+  border-radius:12px;
+  box-shadow:0 12px 28px rgba(0,0,0,.12);
+  padding:12px;
   font-size:12px;
   position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  overflow:hidden;
 }
 
-.license-header{
-  font-weight:700;
-  font-size:13px;
-  border-bottom:1px solid #e3e7eb;
-  padding-bottom:6px;
-  margin-bottom:10px;
-}
-
-.license-body{
-  display:grid;
-  grid-template-columns:70px 1fr;
-  gap:10px;
-}
-
-.photo{
-  width:70px;
-  height:90px;
-  background:#e5e9ee;
-  border:1px solid #cfd6dd;
-  border-radius:6px;
-}
-
-.lines span{
-  display:block;
-  height:8px;
-  background:#e9edf1;
-  border-radius:4px;
-  margin-bottom:7px;
+/* License realistic image */
+.license img{
+  width:100%;
+  border-radius:8px;
+  object-fit:cover;
 }
 
 /* Scales */
 .scales{
   position:absolute;
-  top:-18px;
-  right:-18px;
-  width:52px;
-  height:52px;
+  top:-14px;
+  right:-14px;
+  width:44px;
+  height:44px;
   background:#1f2937;
   border-radius:50%;
   display:grid;
   place-items:center;
   color:#fff;
-  font-size:22px;
-  box-shadow:0 10px 24px rgba(0,0,0,.25);
+  font-size:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,.25);
 }
 
 /* Motto */
 .motto{
   position:absolute;
-  right:-64px;
+  right:-54px;
   top:50%;
   transform:rotate(-90deg) translateY(-50%);
   transform-origin:right top;
-  font-size:13px;
-  letter-spacing:.14em;
+  font-size:12px;
+  letter-spacing:.12em;
   color:#1f2937;
-  font-weight:800;
+  font-weight:700;
   white-space:nowrap;
 }
+@media(max-width:900px){.motto{display:none;}}
 
 /* Footer */
 footer{
-  margin-top:40px;
-  padding-top:18px;
+  margin-top:32px;
+  padding-top:14px;
   border-top:1px solid var(--line);
-  font-size:13px;
-  color:var(--muted);
+  font-size:13px;color:var(--muted);
 }
 </style>
 </head>
-
 <body>
 
 <header>
@@ -239,20 +149,10 @@ footer{
 
     <!-- LEFT -->
     <div>
-      <h1>
-        Если возник вопрос по водительскому удостоверению —
-        сначала фиксируем факты, затем действуем по процедуре
-      </h1>
-
-      <p class="lead">
-        Юридическая помощь и разбор ситуаций, связанных с водительским удостоверением.
-        Чётко, по шагам и без лишней воды.
-      </p>
-
+      <h1>Если возник вопрос по водительскому удостоверению — фиксируем факты и действуем по процедуре</h1>
+      <p class="lead">Разбор ситуаций, советы по документам и юридическая поддержка онлайн. Чётко и по шагам.</p>
       <div class="cta">
-        <a class="btn btn-tg"
-           href="https://t.me/Vadim_Prava1"
-           target="_blank" rel="noopener nofollow">
+        <a class="btn btn-tg" href="https://t.me/Vadim_Prava1" target="_blank" rel="noopener nofollow">
           Написать в Telegram
         </a>
       </div>
@@ -260,18 +160,9 @@ footer{
       <section>
         <h2>Как мы работаем</h2>
         <div class="grid">
-          <div class="card">
-            <b>Фиксируем факты</b>
-            Анализируем дату, место, документы и действия сторон.
-          </div>
-          <div class="card">
-            <b>Проверяем процедуру</b>
-            Сопоставляем ситуацию с установленным порядком.
-          </div>
-          <div class="card">
-            <b>Объясняем варианты</b>
-            Разбираем возможные действия и последствия.
-          </div>
+          <div class="card"><b>Фиксируем факты</b>Дата, место, документы и действия сторон.</div>
+          <div class="card"><b>Проверяем процедуру</b>Сопоставляем с установленными правилами.</div>
+          <div class="card"><b>Объясняем варианты</b>Разбираем возможные действия и последствия.</div>
         </div>
       </section>
 
@@ -284,34 +175,21 @@ footer{
         </div>
       </section>
 
-      <footer>
-        Информация на сайте носит справочный характер и не является публичной офертой
-        или обещанием результата. Окончательные решения принимаются пользователем самостоятельно.
-      </footer>
+      <footer>Информация носит справочный характер и не является публичной офертой.</footer>
     </div>
 
     <!-- RIGHT -->
     <div class="license-wrap" aria-hidden="true">
       <div class="license">
-        <div class="license-header">
-          ВОДИТЕЛЬСКОЕ УДОСТОВЕРЕНИЕ • РФ
-        </div>
-
-        <div class="license-body">
-          <div class="photo"></div>
-          <div class="lines">
-            <span></span><span></span><span></span><span></span>
-          </div>
-        </div>
-
         <div class="scales">⚖️</div>
         <div class="motto">НАДЁЖНО • ПО ПРОЦЕДУРЕ • ЗАКОННО</div>
+        <!-- Реалистичная картинка удостоверения -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Driver_license_Russia.png" alt="Водительское удостоверение РФ">
       </div>
     </div>
 
   </div>
 </main>
-
 </body>
 </html>
 
