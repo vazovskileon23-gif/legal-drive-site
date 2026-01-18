@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Юридическая помощь по водительскому удостоверению</title>
-<meta name="description" content="Юридическая помощь по вопросам водительского удостоверения. Онлайн разбор ситуаций.">
+<meta name="description" content="Помощь по вопросам водительского удостоверения. Онлайн консультации.">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6T8TBCGVP"></script>
 <script>
@@ -26,7 +26,6 @@ gtag('config', 'G-D6T8TBCGVP');
   --border:#2a2f38;
   --radius:12px;
 }
-
 *{box-sizing:border-box;margin:0;padding:0}
 body{
   background:var(--bg);
@@ -45,7 +44,13 @@ header{
   justify-content:space-between;
   align-items:center;
 }
+.logo{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
 .logo b{font-size:16px}
+.logo span{font-size:18px}
 .right-text{font-weight:700;color:#fbbf24}
 
 main{padding:28px 0}
@@ -55,7 +60,7 @@ main{padding:28px 0}
   border-radius:var(--radius);
   padding:24px;
   display:grid;
-  grid-template-columns:1fr 320px;
+  grid-template-columns:1fr 300px;
   gap:28px;
   position:relative;
 }
@@ -71,7 +76,7 @@ main{padding:28px 0}
 .hero::after{
   content:"";
   position:absolute;
-  left:calc(100% - 340px);
+  left:calc(100% - 320px);
   top:0;
   bottom:0;
   width:2px;
@@ -91,7 +96,7 @@ h1{font-size:28px;margin-bottom:10px}
   font-weight:700;
 }
 
-section{margin-top:22px}
+section{margin-top:26px}
 h2{font-size:18px;margin-bottom:10px}
 
 .grid{
@@ -153,12 +158,12 @@ h2{font-size:18px;margin-bottom:10px}
 .photo{
   width:70px;
   height:90px;
-  background:#d1d5db;
+  background:#e5e7eb;
   border-radius:6px;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:36px;
+  font-size:28px;
 }
 .lines span{
   display:block;
@@ -169,7 +174,7 @@ h2{font-size:18px;margin-bottom:10px}
 }
 
 footer{
-  margin-top:24px;
+  margin-top:26px;
   text-align:center;
   font-size:13px;
   color:var(--muted);
@@ -181,7 +186,10 @@ footer{
 
 <header>
   <div class="wrap header">
-    <div class="logo"><b>Юридическая помощь</b></div>
+    <div class="logo">
+      <b>Юридическая помощь</b>
+      <span>⚖️</span>
+    </div>
     <div class="right-text">Быстро • Качественно • Надёжно</div>
   </div>
 </header>
@@ -211,7 +219,7 @@ footer{
 </div>
 <div class="card">
 <b>Индивидуальный подход</b>
-Разбираем вводные данные и предлагаем варианты под вашу ситуацию.
+Разбираем вводные данные и предлагаем варианты действий.
 </div>
 <div class="card">
 <b>Конфиденциальность</b>
@@ -222,14 +230,20 @@ footer{
 
 <section>
 <h2>Часто задаваемые вопросы</h2>
+
 <details class="faq-item">
-<summary>Можно ли проконсультироваться онлайн?</summary>
-<p>Да, консультации проходят дистанционно.</p>
+<summary>Есть ли рассрочка?</summary>
+<p>Да, возможна. Детали обсуждаем на консультации.</p>
 </details>
+
 <details class="faq-item">
-<summary>Что делать при лишении прав?</summary>
-<p>Разберём ситуацию и подскажем возможные действия.</p>
+<summary>Сколько времени занимает решение вопроса?</summary>
+<p>
+Сроки зависят от вашей ситуации и процедуры.  
+На консультации уточним вводные данные и сориентируем по возможным срокам.
+</p>
 </details>
+
 </section>
 </div>
 
@@ -237,7 +251,7 @@ footer{
 <div class="license">
 <div class="license-header">ВОДИТЕЛЬСКОЕ УДОСТОВЕРЕНИЕ РФ</div>
 <div class="license-body">
-<div class="photo">👤</div>
+<div class="photo">🙂</div>
 <div class="lines">
 <span></span><span></span><span></span><span></span>
 </div>
@@ -256,11 +270,12 @@ footer{
 </main>
 
 <footer>
-© 2024 • Онлайн-консультации • РФ
+© 2024 • Онлайн-консультации • Российская Федерация
 </footer>
 
 </body>
 </html>
+
 
 
 
