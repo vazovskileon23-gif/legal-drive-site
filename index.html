@@ -6,11 +6,7 @@
 
 <title>Юридическая помощь по водительскому удостоверению</title>
 <meta name="description" content="Юридическая помощь по вопросам водительского удостоверения. Онлайн разбор ситуаций.">
-<meta name="robots" content="index, follow">
 
-<link rel="icon" href="/favicon.ico">
-
-<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6T8TBCGVP"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -25,7 +21,7 @@ gtag('config', 'G-D6T8TBCGVP');
   --panel:#161a20;
   --text:#f3f4f6;
   --muted:#9ca3af;
-  --accent:#1f6fb2;
+  --accent:#1e3a5f;
   --yellow:#eab30855;
   --border:#2a2f38;
   --radius:12px;
@@ -38,7 +34,6 @@ body{
   font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 }
 .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-a{text-decoration:none;color:inherit}
 
 header{
   background:var(--panel);
@@ -60,8 +55,8 @@ main{padding:28px 0}
   border-radius:var(--radius);
   padding:24px;
   display:grid;
-  grid-template-columns:1fr 380px;
-  gap:24px;
+  grid-template-columns:1fr 320px;
+  gap:28px;
   position:relative;
 }
 .hero::before{
@@ -72,55 +67,45 @@ main{padding:28px 0}
   bottom:0;
   width:3px;
   background:var(--yellow);
-  border-radius:3px;
 }
 .hero::after{
   content:"";
   position:absolute;
-  right:380px;
+  left:calc(100% - 340px);
   top:0;
   bottom:0;
   width:2px;
   background:var(--yellow);
 }
 
-h1{
-  font-size:28px;
-  margin-bottom:10px;
-}
-.lead{
-  color:var(--muted);
-  margin-bottom:16px;
-  max-width:60ch;
-}
+h1{font-size:28px;margin-bottom:10px}
+.lead{color:var(--muted);margin-bottom:16px;max-width:60ch}
 
 .btn{
   display:inline-block;
   padding:12px 20px;
   border-radius:10px;
   border:2px solid #000;
-  background:#1e3a5f;
+  background:var(--accent);
   color:#fff;
   font-weight:700;
-  cursor:pointer;
 }
-.btn:hover{opacity:.9}
 
-section{margin-top:20px}
+section{margin-top:22px}
 h2{font-size:18px;margin-bottom:10px}
 
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:10px;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
 }
 .card{
   background:#1c222b;
   border:1px solid var(--border);
   border-radius:10px;
-  padding:12px;
+  padding:14px;
 }
-.card b{display:block;margin-bottom:4px;color:#fbbf24}
+.card b{display:block;margin-bottom:6px;color:#fbbf24}
 
 .faq-item{
   background:#1c222b;
@@ -138,26 +123,27 @@ h2{font-size:18px;margin-bottom:10px}
   color:var(--muted);
   border-top:1px solid var(--border);
 }
-summary::-webkit-details-marker{display:none}
 
 .license-wrap{
   display:flex;
   flex-direction:column;
   gap:14px;
+  align-items:center;
 }
+
 .license{
   background:#f9fafb;
   color:#111;
   border-radius:10px;
   padding:12px;
-  width:100%;
+  width:260px;
 }
 .license-header{
   text-align:center;
   font-weight:700;
-  margin-bottom:8px;
   border-bottom:1px solid #ddd;
   padding-bottom:6px;
+  margin-bottom:8px;
 }
 .license-body{
   display:grid;
@@ -168,7 +154,11 @@ summary::-webkit-details-marker{display:none}
   width:70px;
   height:90px;
   background:#d1d5db;
-  border-radius:4px;
+  border-radius:6px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:36px;
 }
 .lines span{
   display:block;
@@ -191,9 +181,7 @@ footer{
 
 <header>
   <div class="wrap header">
-    <div class="logo">
-      <b>Юридическая помощь</b>
-    </div>
+    <div class="logo"><b>Юридическая помощь</b></div>
     <div class="right-text">Быстро • Качественно • Надёжно</div>
   </div>
 </header>
@@ -204,8 +192,7 @@ footer{
 <div>
 <h1>Помогаем с решением вопросов по водительскому удостоверению</h1>
 <p class="lead">
-Нужны детали?  
-<br>Напишите нам — уточним вашу ситуацию и предложим возможные варианты решения.
+Нужны детали? Напишите нам — уточним вашу ситуацию и предложим возможные варианты решения.
 </p>
 
 <a class="btn"
@@ -216,11 +203,20 @@ footer{
 </a>
 
 <section>
-<h2>Как мы работаем</h2>
+<h2>Почему выбирают нас</h2>
 <div class="grid">
-<div class="card"><b>Анализ</b>Изучаем ситуацию и документы</div>
-<div class="card"><b>Процедура</b>Проверяем действия по закону</div>
-<div class="card"><b>Решения</b>Предлагаем возможные шаги</div>
+<div class="card">
+<b>Опыт</b>
+Большой опыт консультаций по вопросам водительских прав и процедур.
+</div>
+<div class="card">
+<b>Индивидуальный подход</b>
+Разбираем вводные данные и предлагаем варианты под вашу ситуацию.
+</div>
+<div class="card">
+<b>Конфиденциальность</b>
+Бережно относимся к данным и деталям обращения.
+</div>
 </div>
 </section>
 
@@ -235,14 +231,13 @@ footer{
 <p>Разберём ситуацию и подскажем возможные действия.</p>
 </details>
 </section>
-
 </div>
 
 <div class="license-wrap">
 <div class="license">
 <div class="license-header">ВОДИТЕЛЬСКОЕ УДОСТОВЕРЕНИЕ РФ</div>
 <div class="license-body">
-<div class="photo"></div>
+<div class="photo">👤</div>
 <div class="lines">
 <span></span><span></span><span></span><span></span>
 </div>
@@ -261,7 +256,7 @@ footer{
 </main>
 
 <footer>
-© 2024 • Онлайн-консультации • Email: marriesanna7@gmail.com
+© 2024 • Онлайн-консультации • РФ
 </footer>
 
 </body>
