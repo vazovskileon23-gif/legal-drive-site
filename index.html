@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Юридическая помощь по водительскому удостоверению</title>
-<meta name="description" content="Помощь в решении вопросов по водительскому удостоверению. Онлайн.">
-<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Помогаем с решением вопросов по водительскому удостоверению. Онлайн.">
+<meta name="theme-color" content="#0f0f0f">
 <meta name="robots" content="index, follow">
 
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -22,9 +22,9 @@ gtag('config', 'G-D6T8TBCGVP');
 
 <style>
 :root{
-  --bg:#f7f7f7;
-  --bg-soft:#ffffff;
-  --line:#dcdcdc;
+  --bg:#0f0f0f;
+  --card:#ffffff;
+  --line:#d0d0d0;
   --text:#ff8a00;
   --muted:#c77700;
   --accent:#4a6f8a;
@@ -41,8 +41,8 @@ body{
 a{text-decoration:none;color:inherit}
 
 header{
-  background:#fff;
-  border-bottom:1px solid var(--line);
+  background:#141414;
+  border-bottom:1px solid #222;
   padding:14px 0;
 }
 .header{
@@ -53,17 +53,16 @@ header{
 .logo b{font-size:17px;}
 .tagline{font-weight:700;}
 
-main{padding:26px 0;}
+main{padding:28px 0;}
 
 .hero{
-  background:var(--bg-soft);
-  border-radius:var(--r);
-  padding:26px;
+  background:transparent;
 }
 .hero-grid{
   display:grid;
-  grid-template-columns:1.3fr .7fr;
+  grid-template-columns:1.3fr auto;
   gap:24px;
+  align-items:flex-start;
 }
 @media(max-width:900px){
   .hero-grid{grid-template-columns:1fr}
@@ -86,10 +85,10 @@ h1{
   font-weight:700;
   border:2px solid #000;
   background:#5f7f99;
-  color:#ff8a00;
+  color:var(--text);
 }
 
-section{margin-top:28px;}
+section{margin-top:30px;}
 h2{font-size:18px;margin-bottom:12px;}
 
 .grid{
@@ -98,34 +97,40 @@ h2{font-size:18px;margin-bottom:12px;}
   gap:12px;
 }
 .card{
-  background:#fff;
-  border:1px solid var(--line);
+  background:var(--card);
   border-radius:10px;
   padding:14px;
+  color:#111;
 }
-.card b{display:block;margin-bottom:6px}
+.card b{display:block;margin-bottom:6px;color:var(--text)}
 
 .faq details{
-  background:#fff;
-  border:1px solid var(--line);
+  background:var(--card);
   border-radius:10px;
   margin-bottom:10px;
+  color:#111;
 }
 .faq summary{
   padding:12px 14px;
   font-weight:700;
   cursor:pointer;
+  color:var(--text);
 }
 .faq p{
   padding:12px 14px;
   border-top:1px solid var(--line);
 }
 
+/* === ВОДИТЕЛЬСКОЕ === */
+.license-wrap{
+  display:flex;
+  align-items:flex-start;
+}
 .license{
+  width:280px;              /* ФИКСИРОВАННЫЙ РАЗМЕР */
   background:#fff;
-  border:1px solid var(--line);
   border-radius:14px;
-  padding:14px;
+  padding:12px;
   position:relative;
 }
 .license-header{
@@ -134,17 +139,18 @@ h2{font-size:18px;margin-bottom:12px;}
   margin-bottom:8px;
   border-bottom:1px solid var(--line);
   padding-bottom:6px;
+  color:#111;
 }
 .license-body{
   display:grid;
-  grid-template-columns:50px 1fr;
-  gap:10px;
+  grid-template-columns:48px 1fr;
+  gap:8px;
 }
 .photo{
-  width:50px;
-  height:65px;
-  background:#eaeaea;
-  border:1px solid #ccc;
+  width:48px;
+  height:62px;              /* РЕАЛЬНОЕ ОКНО ФОТО */
+  background:#e6e6e6;
+  border:1px solid #bbb;
   border-radius:4px;
 }
 .lines span{
@@ -156,31 +162,33 @@ h2{font-size:18px;margin-bottom:12px;}
 }
 .scales{
   position:absolute;
-  top:10px;
-  right:10px;
-  font-size:18px;
+  top:8px;
+  right:8px;
+  font-size:16px;
 }
 
 .license-bottom{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:8px;
+  gap:6px;
   margin-top:10px;
 }
 .badge{
   border:1px solid var(--line);
   border-radius:8px;
-  font-size:12px;
-  padding:6px;
+  font-size:11px;
+  padding:5px;
   text-align:center;
+  color:#111;
 }
 
 footer{
-  margin-top:28px;
+  margin-top:36px;
   padding-top:14px;
-  border-top:1px solid var(--line);
+  border-top:1px solid #222;
   font-size:12px;
   text-align:center;
+  color:#aaa;
 }
 </style>
 </head>
@@ -214,9 +222,9 @@ footer{
 <section>
 <h2>Как мы работаем</h2>
 <div class="grid">
-<div class="card"><b>Анализ ситуации</b>Изучаем факты и документы</div>
-<div class="card"><b>Проверка процедуры</b>Сверяем действия с требованиями</div>
-<div class="card"><b>Рекомендации</b>Подсказываем возможные шаги</div>
+<div class="card"><b>Анализ</b>Изучаем ситуацию и документы</div>
+<div class="card"><b>Проверка</b>Сверяем действия с требованиями</div>
+<div class="card"><b>Решения</b>Показываем возможные шаги</div>
 </div>
 </section>
 
@@ -224,34 +232,36 @@ footer{
 <h2>Часто задаваемые вопросы</h2>
 <details>
 <summary>Можно ли получить консультацию онлайн?</summary>
-<p>Да, все консультации проходят дистанционно.</p>
+<p>Да, консультации проходят дистанционно.</p>
 </details>
 <details>
-<summary>Вы работаете по всей России?</summary>
-<p>Да, регион не имеет значения.</p>
+<summary>Работаете по всей России?</summary>
+<p>Да, регион значения не имеет.</p>
 </details>
 <details>
 <summary>Нужно ли сразу отправлять документы?</summary>
-<p>Только при необходимости, после первичного разбора.</p>
+<p>Только после первичного разбора.</p>
 </details>
 </section>
 
 </div>
 
-<div class="license">
-<div class="scales">⚖️</div>
-<div class="license-header">ВОДИТЕЛЬСКОЕ УДОСТОВЕРЕНИЕ</div>
-<div class="license-body">
-<div class="photo"></div>
-<div class="lines">
-<span></span><span></span><span></span><span></span>
-</div>
-</div>
-<div class="license-bottom">
-<div class="badge">Конфиденциально</div>
-<div class="badge">Онлайн</div>
-<div class="badge">По закону</div>
-</div>
+<div class="license-wrap">
+  <div class="license">
+    <div class="scales">⚖️</div>
+    <div class="license-header">ВОДИТЕЛЬСКОЕ УДОСТОВЕРЕНИЕ</div>
+    <div class="license-body">
+      <div class="photo"></div>
+      <div class="lines">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="license-bottom">
+      <div class="badge">Конфиденциально</div>
+      <div class="badge">Онлайн</div>
+      <div class="badge">По закону</div>
+    </div>
+  </div>
 </div>
 
 </div>
