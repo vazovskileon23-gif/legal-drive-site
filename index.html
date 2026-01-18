@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Юридическая помощь по водительскому удостоверению</title>
-<meta name="description" content="Юридическая помощь и разбор ситуаций по вопросам водительского удостоверения. Фиксируем факты и действуем по процедуре. Онлайн.">
-<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Помощь в решении вопросов по водительскому удостоверению. Онлайн-консультации, разбор ситуаций, соблюдение процедуры.">
+<meta name="theme-color" content="#0b0b0b">
 <meta name="robots" content="index, follow">
 
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -14,79 +14,166 @@
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6T8TBCGVP"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-D6T8TBCGVP');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D6T8TBCGVP');
 </script>
 
 <style>
 :root{
-  --bg:#fdfdfd;
-  --bg-soft:#f4f6f8;
-  --line:#e2e6ea;
-  --text:#0f172a;
-  --muted:#5b6472;
-  --accent:#2ea6ff;
-  --r:10px;
+  --bg:#0b0b0b;
+  --bg-soft:#141414;
+  --line:#2a2a2a;
+  --text:#ffffff;
+  --muted:#b3b3b3;
+  --accent:#ff8a00;
+  --r:12px;
   --max:1100px;
-  --shadow:0 12px 28px rgba(0,0,0,.08);
-  --red:#dc262633;
-  --blue:#1e40af33;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
-body{background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
 .wrap{width:min(var(--max),calc(100% - 32px));margin:0 auto;}
 a{text-decoration:none;color:inherit}
 
-header{border-bottom:1px solid var(--line);background:#fff;padding:12px 0;}
-.header{display:flex;align-items:center;}
-.logo b{display:block;font-size:16px;font-weight:700;}
-.logo span{font-size:13px;color:var(--muted);}
+header{
+  border-bottom:1px solid var(--line);
+  background:#000;
+  padding:14px 0;
+}
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo b{font-size:17px;}
+.tagline{
+  font-weight:700;
+  color:var(--accent);
+  letter-spacing:.3px;
+}
 
-main{padding:24px 0;}
-.hero{border-radius:var(--r);padding:24px;background:#fff;box-shadow:var(--shadow);}
-.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;align-items:flex-start;}
-@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:24px}}
+main{padding:28px 0;}
 
-h1{margin:0 0 10px;font-size:clamp(24px,3vw,34px);line-height:1.2;}
-.lead{margin:0 0 16px;color:var(--muted);max-width:60ch;}
+.hero{
+  background:var(--bg-soft);
+  border-radius:var(--r);
+  padding:26px;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.3fr .7fr;
+  gap:24px;
+}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+}
 
-.cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px;}
-.btn{padding:10px 18px;border-radius:10px;font-weight:700;border:1px solid var(--line);cursor:pointer;}
-.btn-tg{background:var(--accent);border:none;color:#00131f;}
+h1{
+  font-size:clamp(26px,3vw,36px);
+  line-height:1.2;
+  margin-bottom:14px;
+}
+.lead{
+  color:var(--muted);
+  max-width:60ch;
+  margin-bottom:20px;
+}
 
-section{margin-top:20px;}
-h2{margin:0 0 10px;font-size:18px;}
-
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;}
-.card{border:2px solid var(--red);border-radius:10px;padding:10px;background:var(--bg-soft);}
-.card b{display:block;margin-bottom:4px;font-size:14px;}
-
-.license-wrap{display:flex;justify-content:center;}
-.license{
-  width:300px;
-  background:#fff;
-  border:2px solid var(--line);
+.btn{
+  display:inline-block;
+  padding:12px 22px;
   border-radius:10px;
-  padding:12px;
-  box-shadow:0 10px 24px rgba(0,0,0,.12);
+  font-weight:700;
+  border:2px solid #fff;
+  background:transparent;
+  color:#fff;
+}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+
+section{margin-top:26px;}
+h2{font-size:18px;margin-bottom:12px;}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:12px;
+}
+.card{
+  background:#000;
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:14px;
+}
+.card b{display:block;margin-bottom:6px}
+
+.license{
+  background:#000;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:14px;
   position:relative;
 }
-.license-header{text-align:center;font-weight:700;border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:8px;}
-.license-body{display:grid;grid-template-columns:60px 1fr;gap:8px;}
-.photo{width:60px;height:80px;background:#e5e9ee;border:1px solid #cfd6dd;border-radius:4px;}
-.lines span{display:block;height:6px;background:#e9edf1;border-radius:3px;margin-bottom:5px;}
-.scales{position:absolute;top:-12px;right:-12px;width:40px;height:40px;background:#1f2937;border-radius:50%;display:grid;place-items:center;color:#fff;}
+.license-header{
+  text-align:center;
+  font-weight:700;
+  margin-bottom:10px;
+  border-bottom:1px solid var(--line);
+  padding-bottom:6px;
+}
+.license-body{
+  display:grid;
+  grid-template-columns:70px 1fr;
+  gap:10px;
+}
+.photo{
+  width:70px;
+  height:90px;
+  background:linear-gradient(135deg,#2a2a2a,#1a1a1a);
+  border-radius:6px;
+}
+.lines span{
+  display:block;
+  height:7px;
+  background:#2d2d2d;
+  border-radius:4px;
+  margin-bottom:7px;
+}
+.scales{
+  position:absolute;
+  top:12px;
+  right:12px;
+  font-size:20px;
+  opacity:.7;
+}
 
-.accent-frame{border:2px solid var(--blue);border-radius:10px;padding:8px;background:var(--bg-soft);font-size:12px;text-align:center;}
+.license-bottom{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin-top:12px;
+}
+.badge{
+  border:1px solid var(--line);
+  border-radius:8px;
+  font-size:12px;
+  padding:6px;
+  text-align:center;
+  color:var(--muted);
+}
 
-.faq-item{border:2px solid var(--red);border-radius:10px;margin-bottom:8px;}
-.faq-item summary{padding:8px 12px;font-weight:700;cursor:pointer;}
-.faq-item p{padding:8px 12px;border-top:1px solid var(--line);}
-summary::-webkit-details-marker{display:none}
-
-footer{margin-top:24px;padding-top:12px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);}
+footer{
+  margin-top:28px;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+  font-size:12px;
+  color:var(--muted);
+  text-align:center;
+}
 </style>
 </head>
 
@@ -94,10 +181,8 @@ footer{margin-top:24px;padding-top:12px;border-top:1px solid var(--line);font-si
 
 <header>
   <div class="wrap header">
-    <div class="logo">
-      <b>Юридическая помощь</b>
-      <span>Вопросы водительского удостоверения</span>
-    </div>
+    <div class="logo"><b>Юридическая помощь</b></div>
+    <div class="tagline">Быстро · Качественно · Надёжно</div>
   </div>
 </header>
 
@@ -105,72 +190,52 @@ footer{margin-top:24px;padding-top:12px;border-top:1px solid var(--line);font-si
 <div class="wrap hero hero-grid">
 
 <div>
-<h1>Если возник вопрос по водительскому удостоверению — фиксируем факты и действуем по процедуре</h1>
-<p class="lead">Разбор ситуаций, советы по документам и юридическая поддержка онлайн.</p>
+<h1>Помогаем с решением вопросов по водительскому удостоверению</h1>
+<p class="lead">
+Разбор ситуаций, проверка процедуры и рекомендации по дальнейшим действиям.
+Работаем онлайн.
+</p>
 
-<div class="cta">
-<a class="btn btn-tg"
+<a class="btn"
    href="https://t.me/Vadim_Prava1"
    target="_blank"
    rel="noopener nofollow"
    onclick="gtag('event','telegram_click',{event_category:'contact',event_label:'telegram_button'});">
 Написать в Telegram
 </a>
-</div>
 
 <section>
 <h2>Как мы работаем</h2>
 <div class="grid">
-<div class="card"><b>Фиксируем факты</b>Анализируем ситуацию и документы</div>
-<div class="card"><b>Проверяем процедуру</b>Сверяем действия с требованиями</div>
-<div class="card"><b>Объясняем варианты</b>Показываем возможные шаги</div>
+<div class="card"><b>Анализ</b>Изучаем обстоятельства и документы</div>
+<div class="card"><b>Процедура</b>Сверяем действия с законом</div>
+<div class="card"><b>Решения</b>Предлагаем допустимые варианты</div>
 </div>
 </section>
-
-<section class="faq">
-<h2>Часто задаваемые вопросы</h2>
-<details class="faq-item">
-<summary>Что делать при лишении прав?</summary>
-<p>Подскажем возможные шаги и порядок действий.</p>
-</details>
-<details class="faq-item">
-<summary>Можно ли всё решить онлайн?</summary>
-<p>Да, консультации проходят дистанционно.</p>
-</details>
-</section>
-
-<section>
-<h2>Контакты</h2>
-<div class="grid">
-<div class="card"><b>Telegram</b>@Vadim_Prava1</div>
-<div class="card"><b>Email</b>marriesanna7@gmail.com</div>
-<div class="card"><b>Регион</b>Российская Федерация</div>
-</div>
-</section>
-
-<footer>
-Информация носит справочный характер.
-</footer>
-
 </div>
 
-<div class="license-wrap">
 <div class="license">
 <div class="scales">⚖️</div>
-<div class="license-header">ВОДИТЕЛЬСКОЕ УДОСТОВЕРЕНИЕ РФ</div>
+<div class="license-header">ВОДИТЕЛЬСКОЕ УДОСТОВЕРЕНИЕ</div>
 <div class="license-body">
 <div class="photo"></div>
-<div class="lines"><span></span><span></span><span></span><span></span></div>
+<div class="lines">
+<span></span><span></span><span></span><span></span><span></span>
 </div>
-<div class="grid" style="margin-top:8px">
-<div class="accent-frame">Конфиденциально</div>
-<div class="accent-frame">Онлайн</div>
-<div class="accent-frame">По закону</div>
 </div>
+<div class="license-bottom">
+<div class="badge">Конфиденциально</div>
+<div class="badge">Онлайн</div>
+<div class="badge">По закону</div>
 </div>
 </div>
 
 </div>
+
+<footer>
+© 2024–2026 · Онлайн-консультации · Информация носит справочный характер
+</footer>
+
 </main>
 
 </body>
