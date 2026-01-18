@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Юридическая помощь по водительскому удостоверению</title>
-<meta name="description" content="Помощь в решении вопросов по водительскому удостоверению. Онлайн-консультации, разбор ситуаций, соблюдение процедуры.">
-<meta name="theme-color" content="#0b0b0b">
+<meta name="description" content="Помощь в решении вопросов по водительскому удостоверению. Онлайн.">
+<meta name="theme-color" content="#ffffff">
 <meta name="robots" content="index, follow">
 
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -22,12 +22,12 @@ gtag('config', 'G-D6T8TBCGVP');
 
 <style>
 :root{
-  --bg:#0b0b0b;
-  --bg-soft:#141414;
-  --line:#2a2a2a;
-  --text:#ffffff;
-  --muted:#b3b3b3;
-  --accent:#ff8a00;
+  --bg:#f7f7f7;
+  --bg-soft:#ffffff;
+  --line:#dcdcdc;
+  --text:#ff8a00;
+  --muted:#c77700;
+  --accent:#4a6f8a;
   --r:12px;
   --max:1100px;
 }
@@ -35,14 +35,14 @@ gtag('config', 'G-D6T8TBCGVP');
 body{
   background:var(--bg);
   color:var(--text);
-  font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 }
 .wrap{width:min(var(--max),calc(100% - 32px));margin:0 auto;}
 a{text-decoration:none;color:inherit}
 
 header{
+  background:#fff;
   border-bottom:1px solid var(--line);
-  background:#000;
   padding:14px 0;
 }
 .header{
@@ -51,13 +51,9 @@ header{
   align-items:center;
 }
 .logo b{font-size:17px;}
-.tagline{
-  font-weight:700;
-  color:var(--accent);
-  letter-spacing:.3px;
-}
+.tagline{font-weight:700;}
 
-main{padding:28px 0;}
+main{padding:26px 0;}
 
 .hero{
   background:var(--bg-soft);
@@ -79,7 +75,6 @@ h1{
   margin-bottom:14px;
 }
 .lead{
-  color:var(--muted);
   max-width:60ch;
   margin-bottom:20px;
 }
@@ -89,13 +84,12 @@ h1{
   padding:12px 22px;
   border-radius:10px;
   font-weight:700;
-  border:2px solid #fff;
-  background:transparent;
-  color:#fff;
+  border:2px solid #000;
+  background:#5f7f99;
+  color:#ff8a00;
 }
-.btn:hover{border-color:var(--accent);color:var(--accent)}
 
-section{margin-top:26px;}
+section{margin-top:28px;}
 h2{font-size:18px;margin-bottom:12px;}
 
 .grid{
@@ -104,15 +98,31 @@ h2{font-size:18px;margin-bottom:12px;}
   gap:12px;
 }
 .card{
-  background:#000;
+  background:#fff;
   border:1px solid var(--line);
   border-radius:10px;
   padding:14px;
 }
 .card b{display:block;margin-bottom:6px}
 
+.faq details{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:10px;
+  margin-bottom:10px;
+}
+.faq summary{
+  padding:12px 14px;
+  font-weight:700;
+  cursor:pointer;
+}
+.faq p{
+  padding:12px 14px;
+  border-top:1px solid var(--line);
+}
+
 .license{
-  background:#000;
+  background:#fff;
   border:1px solid var(--line);
   border-radius:14px;
   padding:14px;
@@ -121,41 +131,41 @@ h2{font-size:18px;margin-bottom:12px;}
 .license-header{
   text-align:center;
   font-weight:700;
-  margin-bottom:10px;
+  margin-bottom:8px;
   border-bottom:1px solid var(--line);
   padding-bottom:6px;
 }
 .license-body{
   display:grid;
-  grid-template-columns:70px 1fr;
+  grid-template-columns:50px 1fr;
   gap:10px;
 }
 .photo{
-  width:70px;
-  height:90px;
-  background:linear-gradient(135deg,#2a2a2a,#1a1a1a);
-  border-radius:6px;
+  width:50px;
+  height:65px;
+  background:#eaeaea;
+  border:1px solid #ccc;
+  border-radius:4px;
 }
 .lines span{
   display:block;
-  height:7px;
-  background:#2d2d2d;
-  border-radius:4px;
-  margin-bottom:7px;
+  height:6px;
+  background:#e5e5e5;
+  border-radius:3px;
+  margin-bottom:6px;
 }
 .scales{
   position:absolute;
-  top:12px;
-  right:12px;
-  font-size:20px;
-  opacity:.7;
+  top:10px;
+  right:10px;
+  font-size:18px;
 }
 
 .license-bottom{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:8px;
-  margin-top:12px;
+  margin-top:10px;
 }
 .badge{
   border:1px solid var(--line);
@@ -163,7 +173,6 @@ h2{font-size:18px;margin-bottom:12px;}
   font-size:12px;
   padding:6px;
   text-align:center;
-  color:var(--muted);
 }
 
 footer{
@@ -171,7 +180,6 @@ footer{
   padding-top:14px;
   border-top:1px solid var(--line);
   font-size:12px;
-  color:var(--muted);
   text-align:center;
 }
 </style>
@@ -192,8 +200,7 @@ footer{
 <div>
 <h1>Помогаем с решением вопросов по водительскому удостоверению</h1>
 <p class="lead">
-Разбор ситуаций, проверка процедуры и рекомендации по дальнейшим действиям.
-Работаем онлайн.
+Разбор ситуаций, проверка процедур и рекомендации по дальнейшим действиям онлайн.
 </p>
 
 <a class="btn"
@@ -207,11 +214,28 @@ footer{
 <section>
 <h2>Как мы работаем</h2>
 <div class="grid">
-<div class="card"><b>Анализ</b>Изучаем обстоятельства и документы</div>
-<div class="card"><b>Процедура</b>Сверяем действия с законом</div>
-<div class="card"><b>Решения</b>Предлагаем допустимые варианты</div>
+<div class="card"><b>Анализ ситуации</b>Изучаем факты и документы</div>
+<div class="card"><b>Проверка процедуры</b>Сверяем действия с требованиями</div>
+<div class="card"><b>Рекомендации</b>Подсказываем возможные шаги</div>
 </div>
 </section>
+
+<section class="faq">
+<h2>Часто задаваемые вопросы</h2>
+<details>
+<summary>Можно ли получить консультацию онлайн?</summary>
+<p>Да, все консультации проходят дистанционно.</p>
+</details>
+<details>
+<summary>Вы работаете по всей России?</summary>
+<p>Да, регион не имеет значения.</p>
+</details>
+<details>
+<summary>Нужно ли сразу отправлять документы?</summary>
+<p>Только при необходимости, после первичного разбора.</p>
+</details>
+</section>
+
 </div>
 
 <div class="license">
@@ -220,7 +244,7 @@ footer{
 <div class="license-body">
 <div class="photo"></div>
 <div class="lines">
-<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span>
 </div>
 </div>
 <div class="license-bottom">
@@ -233,13 +257,14 @@ footer{
 </div>
 
 <footer>
-© 2024–2026 · Онлайн-консультации · Информация носит справочный характер
+© 2024–2026 · Онлайн-формат · Информация носит справочный характер
 </footer>
 
 </main>
 
 </body>
 </html>
+
 
 
 
