@@ -7,6 +7,7 @@
 <title>Юридическая помощь по водительскому удостоверению</title>
 <meta name="description" content="Помощь по вопросам водительского удостоверения. Онлайн консультации.">
 
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6T8TBCGVP"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -14,6 +15,26 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-D6T8TBCGVP');
 </script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function(m,e,t,r,i,k,a){
+    m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106323339', 'ym');
+
+ym(106323339, 'init', {
+    ssr:true,
+    webvisor:true,
+    clickmap:true,
+    ecommerce:"dataLayer",
+    accurateTrackBounce:true,
+    trackLinks:true
+});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/106323339" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
 <style>
 :root{
@@ -69,10 +90,11 @@ main{padding:28px 0}
   gap:28px;
   position:relative;
 }
+/* Сдвинули линию влево, чтобы не пересекала текст */
 .hero::before{
   content:"";
   position:absolute;
-  left:0;
+  left:-8px; /* смещаем влево */
   top:0;
   bottom:0;
   width:3px;
@@ -197,7 +219,7 @@ h2{font-size:18px;margin-bottom:10px}
   border-radius:4px;
 }
 
-footer{
+.footer{
   margin-top:26px;
   text-align:center;
   font-size:13px;
@@ -236,14 +258,16 @@ footer{
 Нужны детали? Напишите нам — уточним вашу ситуацию и предложим возможные варианты решения.
 </p>
 
+<!-- Верхняя кнопка Telegram с аналитикой -->
 <a class="btn"
    href="https://t.me/Vadim_Prava1"
    target="_blank"
-   onclick="gtag('event','telegram_click',{event_category:'contact'});">
+   onclick="ym(106323339,'reachGoal','tg_click'); gtag('event','telegram_click',{event_category:'contact'});">
 Написать в Telegram
 </a>
 
-<p style="margin-top:8px;color:#9aa1ad;font-size:14px;padding-left:8px;display:inline-block;">
+<!-- Текст под кнопкой -->
+<p style="margin-top:8px;color:#9aa1ad;font-size:14px;">
 Ответим в течение дня. Сообщение можно написать в свободной форме.
 </p>
 
@@ -305,10 +329,11 @@ footer{
 </div>
 </div>
 
+<!-- Нижняя кнопка Telegram с аналитикой -->
 <a class="btn"
    href="https://t.me/Vadim_Prava1"
    target="_blank"
-   onclick="gtag('event','telegram_click',{event_category:'contact',event_label:'under_license'});">
+   onclick="ym(106323339,'reachGoal','tg_click'); gtag('event','telegram_click',{event_category:'contact',event_label:'under_license'});">
 Связаться с нами
 </a>
 
@@ -321,7 +346,7 @@ footer{
 </div>
 </main>
 
-<footer>
+<footer class="footer">
 © 2024 • Онлайн-консультации • Российская Федерация
 </footer>
 
