@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Помощь по водительскому удостоверению</title>
-<meta name="description" content="Онлайн помощь по вопросам водительского удостоверения">
+
+<title>Юридическая помощь по водительскому удостоверению</title>
+<meta name="description" content="Помощь по вопросам водительского удостоверения. Онлайн консультации.">
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6T8TBCGVP"></script>
@@ -15,7 +16,7 @@ gtag('js', new Date());
 gtag('config', 'G-D6T8TBCGVP');
 </script>
 
-<!-- Yandex.Metrika -->
+<!-- Yandex Metrika -->
 <script type="text/javascript">
 (function(m,e,t,r,i,k,a){
 m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -31,169 +32,142 @@ accurateTrackBounce:true,
 webvisor:true
 });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/106323339" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+<noscript><div><img src="https://mc.yandex.ru/watch/106323339" style="position:absolute; left:-9999px" alt=""></div></noscript>
 
 <style>
 :root{
---bg:#e6eef7;          /* светлый синий фон */
---panel:#cbd8e8;       /* мягкий синий блок */
---text:#111827;         /* тёмный текст */
---muted:#4b5563;        /* серо-синий для подзаголовков */
---accent:#3b82f6;       /* кнопки основной синий */
---gold:#facc15;         /* для декоративной линии */
---border:#94a3b8;       /* мягкая рамка */
---radius:12px;
+  --bg:#eef3fb;
+  --panel:#e1e9f5;
+  --text:#0f172a;
+  --muted:#475569;
+  --accent:#2563eb;
+  --yellow:#eab30855;
+  --border:#c7d2fe;
+  --radius:12px;
 }
-
 *{box-sizing:border-box;margin:0;padding:0}
-
 body{
-background:var(--bg);
-color:var(--text);
-font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 }
-
 .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
 
 header{
-background:var(--panel);
-border-bottom:1px solid var(--border);
-padding:16px 0;
+  background:var(--panel);
+  border-bottom:2px solid var(--yellow);
+  padding:14px 0;
 }
-
 .header{
-display:flex;
-justify-content:space-between;
-align-items:center;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
+.logo{font-weight:700;font-size:18px}
+.right-text{font-weight:700;color:#1e40af}
 
-.logo{
-display:flex;
-gap:10px;
-align-items:center;
-font-weight:700;
-}
-
-.right-text{color:var(--accent);font-weight:600}
-
-main{padding:32px 0}
+main{padding:28px 0}
 
 .hero{
-position:relative;
-background:var(--panel);
-border-radius:var(--radius);
-padding:32px;
-display:grid;
-grid-template-columns:1fr 280px;
-gap:32px;
+  background:var(--panel);
+  border-radius:var(--radius);
+  padding:24px;
+  display:grid;
+  grid-template-columns:1fr 260px;
+  gap:32px;
+  position:relative;
 }
-
 .hero::before{
-content:"";
-position:absolute;
-left:12px;
-top:20px;
-bottom:20px;
-width:2px;
-background:var(--gold);
-opacity:.6;
+  content:"";
+  position:absolute;
+  left:10px;
+  top:20px;
+  bottom:20px;
+  width:3px;
+  background:var(--yellow);
 }
 
-h1{font-size:30px;margin-bottom:12px}
-
-.lead{
-color:var(--muted);
-max-width:60ch;
-margin-bottom:18px;
-}
+h1{font-size:28px;margin-bottom:10px}
+.lead{color:var(--muted);margin-bottom:16px;max-width:60ch}
 
 .btn{
-display:block;
-text-align:center;
-padding:14px 18px;
-border-radius:12px;
-font-weight:700;
-margin-bottom:10px;
-text-decoration:none;
-}
-
-.btn-main{
-background:var(--accent);
-color:#fff;
-}
-
-.btn-alt{
-border:1px solid var(--border);
-color:var(--text);
+  display:inline-block;
+  padding:12px 20px;
+  border-radius:10px;
+  background:var(--accent);
+  color:#fff;
+  font-weight:700;
+  text-decoration:none;
 }
 
 .note{
-font-size:14px;
-color:var(--muted);
-margin-top:6px;
+  margin-top:8px;
+  font-size:14px;
+  color:var(--muted);
 }
 
-section{margin-top:28px}
-
-h2{font-size:18px;margin-bottom:12px}
+section{margin-top:26px}
+h2{font-size:18px;margin-bottom:10px}
 
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:14px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
 }
-
 .card{
-background:#f0f4fb;
-border:1px solid var(--border);
-border-radius:12px;
-padding:16px;
+  background:#f8fafc;
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:14px;
 }
+.card b{display:block;margin-bottom:6px;color:#1e40af}
 
-.card b{color:var(--accent);display:block;margin-bottom:6px}
+/* Правая колонка */
+.right{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:14px;
+}
 
 .license{
-background:#f9fafb;
-color:#111;
-border-radius:12px;
-padding:14px;
-margin-top:24px;
+  background:#f9fafb;
+  color:#111;
+  border-radius:10px;
+  padding:12px;
+  width:240px; /* НОРМАЛЬНЫЙ РАЗМЕР */
 }
-
 .license-header{
-font-weight:700;
-text-align:center;
-border-bottom:1px solid #ddd;
-padding-bottom:8px;
-margin-bottom:10px;
+  text-align:center;
+  font-weight:700;
+  border-bottom:1px solid #ddd;
+  padding-bottom:6px;
+  margin-bottom:8px;
 }
-
 .license-body{
-display:grid;
-grid-template-columns:70px 1fr;
-gap:10px;
+  display:grid;
+  grid-template-columns:70px 1fr;
+  gap:10px;
 }
-
 .photo{
-width:70px;
-height:90px;
-background:#e5e7eb;
-border-radius:6px;
+  width:70px;
+  height:90px;
+  background:#e5e7eb;
+  border-radius:6px;
 }
-
 .lines span{
-display:block;
-height:8px;
-background:#e5e7eb;
-margin-bottom:6px;
-border-radius:4px;
+  display:block;
+  height:8px;
+  background:#e5e7eb;
+  margin-bottom:6px;
+  border-radius:4px;
 }
 
 footer{
-margin-top:32px;
-text-align:center;
-font-size:13px;
-color:var(--muted);
+  margin-top:26px;
+  text-align:center;
+  font-size:13px;
+  color:var(--muted);
 }
 </style>
 </head>
@@ -201,79 +175,74 @@ color:var(--muted);
 <body>
 
 <header>
-<div class="wrap header">
-<div class="logo">⚖️ Юридическая помощь</div>
-<div class="right-text">Опыт более 5 лет</div>
-</div>
+  <div class="wrap header">
+    <div class="logo">⚖️ Юридическая помощь</div>
+    <div class="right-text">Опыт более 5 лет</div>
+  </div>
 </header>
 
 <main>
 <div class="wrap hero">
 
-<div>
-<h1>Хочешь получить права?</h1>
-<p class="lead">
-Подскажем возможные решения даже в ситуациях, где кажется, что выхода нет.
-</p>
+  <!-- Левая колонка -->
+  <div>
+    <h1>Хочешь получить права?</h1>
+    <p class="lead">
+      Онлайн помощь по вопросам водительского удостоверения. 
+      Разбираем даже сложные ситуации, где кажется, что выхода нет.
+    </p>
 
-<a class="btn btn-main"
-href="tg://resolve?domain=Vadim_Prava1"
-onclick="ym(106323339,'reachGoal','tg_click'); gtag('event','telegram_click');">
-Открыть в приложении Telegram
-</a>
+    <a class="btn"
+       href="tg://resolve?domain=Vadim_Prava1"
+       onclick="ym(106323339,'reachGoal','tg_click'); gtag('event','telegram_click');">
+      Открыть в приложении Telegram
+    </a>
 
-<div class="note">
-Ответим в течение дня.<br>
-Сообщение можно написать в свободной форме.<br>
-Если Telegram не открылся — откройте в браузере
-</div>
+    <div class="note">
+      Ответим в течение дня.<br>
+      Сообщение можно написать в свободной форме.
+    </div>
 
-<section>
-<h2>С какими ситуациями к нам обращаются</h2>
-<div class="grid">
-<div class="card"><b>Лишили прав</b>Не знаете, что делать дальше</div>
-<div class="card"><b>Не можете сдать экзамены</b>После попыток без результата</div>
-<div class="card"><b>Проблемы с возвратом</b>Права не выдают после срока</div>
-<div class="card"><b>Сложная ситуация</b>Кажется, что выхода нет</div>
-</div>
-</section>
+    <section>
+      <h2>С какими ситуациями к нам обращаются</h2>
+      <div class="grid">
+        <div class="card"><b>Лишили прав</b>Подскажем возможные варианты</div>
+        <div class="card"><b>Не можете сдать экзамены</b>Разберём причины</div>
+        <div class="card"><b>Проблемы с возвратом</b>После окончания срока</div>
+        <div class="card"><b>Сложная ситуация</b>Нестандартные случаи</div>
+      </div>
+    </section>
+  </div>
 
-<div class="license">
-<div class="license-header">ВОДИТЕЛЬСКОЕ УДОСТОВЕРЕНИЕ РФ</div>
-<div class="license-body">
-<div class="photo"></div>
-<div class="lines">
-<span></span><span></span><span></span>
-</div>
-</div>
+  <!-- Правая колонка -->
+  <div class="right">
+    <div class="license">
+      <div class="license-header">ВОДИТЕЛЬСКОЕ УДОСТОВЕРЕНИЕ РФ</div>
+      <div class="license-body">
+        <div class="photo"></div>
+        <div class="lines">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
 
-<a class="btn btn-alt"
-href="https://t.me/Vadim_Prava1"
-target="_blank"
-onclick="ym(106323339,'reachGoal','tg_click'); gtag('event','telegram_click');">
-Написать в Telegram
-</a>
-</div>
+    <a class="btn"
+       href="https://t.me/Vadim_Prava1"
+       target="_blank"
+       onclick="ym(106323339,'reachGoal','tg_click'); gtag('event','telegram_click');">
+      Написать в Telegram
+    </a>
+  </div>
 
-<section>
-<h2>Почему нам доверяют</h2>
-<div class="grid">
-<div class="card">✔ Опыт работы более 5 лет</div>
-<div class="card">✔ Решаем даже ситуации, где кажется выхода нет</div>
-<div class="card">✔ Конфиденциально</div>
 </div>
-</section>
-</div>
-
 </main>
 
 <footer>
-© 2024 • Онлайн консультации • РФ
+© 2024 • Онлайн‑консультации • РФ
 </footer>
 
 </body>
 </html>
-
 
 
 
