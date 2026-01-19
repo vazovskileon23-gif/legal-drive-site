@@ -203,6 +203,16 @@ footer{
   font-size:13px;
   color:var(--muted);
 }
+
+/* === ИЗМЕНЕНИЕ №5: мобильная адаптация === */
+@media (max-width: 768px){
+  .hero{
+    grid-template-columns:1fr;
+  }
+  .hero::after{
+    display:none;
+  }
+}
 </style>
 </head>
 
@@ -233,6 +243,11 @@ footer{
    onclick="gtag('event','telegram_click',{event_category:'contact'});">
 Написать в Telegram
 </a>
+
+<!-- ИЗМЕНЕНИЕ №4 -->
+<p style="margin-top:8px;color:#9aa1ad;font-size:14px">
+Ответим в течение дня. Сообщение можно написать в свободной форме.
+</p>
 
 <section>
 <h2>Почему выбирают нас</h2>
@@ -298,6 +313,12 @@ footer{
    onclick="gtag('event','telegram_click',{event_category:'contact',event_label:'under_license'});">
 Связаться с нами
 </a>
+
+<!-- ИЗМЕНЕНИЕ №4 -->
+<p style="margin-top:8px;color:#9aa1ad;font-size:14px;text-align:center">
+Ответим в течение дня. Сообщение можно написать в свободной форме.
+</p>
+
 </div>
 
 </div>
@@ -309,6 +330,7 @@ footer{
 
 </body>
 </html>
+
 
 
 
