@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>Помощь по водительскому удостоверению</title>
 <meta name="description" content="Онлайн помощь по вопросам водительского удостоверения">
 
@@ -36,14 +35,14 @@ webvisor:true
 
 <style>
 :root{
---bg:#0f172a;
---panel:#111827;
---text:#f9fafb;
---muted:#9ca3af;
---accent:#1e3a8a;
---gold:#facc15;
---border:#1f2937;
---radius:14px;
+--bg:#e6eef7;          /* светлый синий фон */
+--panel:#cbd8e8;       /* мягкий синий блок */
+--text:#111827;         /* тёмный текст */
+--muted:#4b5563;        /* серо-синий для подзаголовков */
+--accent:#3b82f6;       /* кнопки основной синий */
+--gold:#facc15;         /* для декоративной линии */
+--border:#94a3b8;       /* мягкая рамка */
+--radius:12px;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -75,7 +74,7 @@ align-items:center;
 font-weight:700;
 }
 
-.right-text{color:var(--gold);font-weight:600}
+.right-text{color:var(--accent);font-weight:600}
 
 main{padding:32px 0}
 
@@ -125,7 +124,7 @@ color:#fff;
 
 .btn-alt{
 border:1px solid var(--border);
-color:#fff;
+color:var(--text);
 }
 
 .note{
@@ -145,19 +144,20 @@ gap:14px;
 }
 
 .card{
-background:#020617;
+background:#f0f4fb;
 border:1px solid var(--border);
 border-radius:12px;
 padding:16px;
 }
 
-.card b{color:var(--gold);display:block;margin-bottom:6px}
+.card b{color:var(--accent);display:block;margin-bottom:6px}
 
 .license{
 background:#f9fafb;
 color:#111;
 border-radius:12px;
 padding:14px;
+margin-top:24px;
 }
 
 .license-header{
@@ -211,7 +211,7 @@ color:var(--muted);
 <div class="wrap hero">
 
 <div>
-<h1>Лишили водительских прав?</h1>
+<h1>Хочешь получить права?</h1>
 <p class="lead">
 Подскажем возможные решения даже в ситуациях, где кажется, что выхода нет.
 </p>
@@ -222,16 +222,10 @@ onclick="ym(106323339,'reachGoal','tg_click'); gtag('event','telegram_click');">
 Открыть в приложении Telegram
 </a>
 
-<a class="btn btn-alt"
-href="https://t.me/Vadim_Prava1"
-target="_blank"
-onclick="ym(106323339,'reachGoal','tg_click'); gtag('event','telegram_click');">
-Написать в Telegram
-</a>
-
 <div class="note">
 Ответим в течение дня.<br>
-Сообщение можно написать в свободной форме.
+Сообщение можно написать в свободной форме.<br>
+Если Telegram не открылся — откройте в браузере
 </div>
 
 <section>
@@ -244,17 +238,6 @@ onclick="ym(106323339,'reachGoal','tg_click'); gtag('event','telegram_click');">
 </div>
 </section>
 
-<section>
-<h2>Почему нам доверяют</h2>
-<div class="grid">
-<div class="card">✔ Опыт работы более 5 лет</div>
-<div class="card">✔ Индивидуальный разбор ситуации</div>
-<div class="card">✔ Конфиденциально</div>
-</div>
-</section>
-</div>
-
-<div>
 <div class="license">
 <div class="license-header">ВОДИТЕЛЬСКОЕ УДОСТОВЕРЕНИЕ РФ</div>
 <div class="license-body">
@@ -263,10 +246,25 @@ onclick="ym(106323339,'reachGoal','tg_click'); gtag('event','telegram_click');">
 <span></span><span></span><span></span>
 </div>
 </div>
-</div>
+
+<a class="btn btn-alt"
+href="https://t.me/Vadim_Prava1"
+target="_blank"
+onclick="ym(106323339,'reachGoal','tg_click'); gtag('event','telegram_click');">
+Написать в Telegram
+</a>
 </div>
 
+<section>
+<h2>Почему нам доверяют</h2>
+<div class="grid">
+<div class="card">✔ Опыт работы более 5 лет</div>
+<div class="card">✔ Решаем даже ситуации, где кажется выхода нет</div>
+<div class="card">✔ Конфиденциально</div>
 </div>
+</section>
+</div>
+
 </main>
 
 <footer>
@@ -275,7 +273,6 @@ onclick="ym(106323339,'reachGoal','tg_click'); gtag('event','telegram_click');">
 
 </body>
 </html>
-
 
 
 
